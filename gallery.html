@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Kzzone Cucine</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="logo"><img src="img/logo1.png"></a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+        <li><a href="index.html #home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="index.html #about" onclick="toggleMenu();">About Us</a></li>
+        <li><a href="index.html #service" onclick="toggleMenu();">Services</a></li>
+        <li><a href="info.html" onclick="toggleMenu();">Info</a></li>
+        <li><a href="index.html #testimonial" onclick="toggleMenu();">testimonials</a></li>    
+        <li><a href="index.html #contact" onclick="toggleMenu();">Contacts</a></li>
+        </ul>    
+    </header>
+       <section class="banner">
+       <section class="services" id="service">
+    <div class="heading1">
+    <h1><span1>P</span1>ortfolio</h1>
+    </div>
+        <div class="content">
+        <a href="kitchengallery.html" class="line">
+            <div class="servicesbx">
+        <img src="img/services2.jfif">
+            <h2>Kitchen</h2>
+        </div>
+    </a>
+        <a href="wardrobegallery.html" class="line">
+            <div class="servicesbx">
+        <img src="img/services3.jfif">
+            <h2>Wardrobe</h2>
+        </div>
+    </a>
+    <a href="vanitygallery.html" class="line">
+        <div class="servicesbx">
+        <img src="img/services1.jfif">
+            <h2>Vanity</h2> 
+        </div>
+    </a>
+        </div>  
+    </section>
+  </section>
+
+    <!-- copyright -->
+<div class="copyright">
+    <p>Copyright @ 2021 Kzzone Cucine. All Rights Reserved.</p>
+</div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
